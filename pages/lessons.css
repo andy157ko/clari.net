@@ -1,0 +1,196 @@
+body {
+    font-family: 'Montserrat', sans-serif;    
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    font-weight: Bold !important; /* Set the font weight to bold for the h1 element */
+}
+header h1 span {
+    font-weight: lighter !important; /* Set the font weight to lighter for the span element within h1 */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-left: 1rem;
+}
+
+nav li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.video-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 30px ;
+    height: 50vh; /* Adjust the height as needed */
+    place-items: center;
+}
+
+.youtube{
+    max-height: 100%;
+    max-width: 100%;
+} 
+
+
+
+.note-grid {
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.note-item {
+    width: 100%;
+    text-align: center;
+}
+
+.note-details {
+    margin-top: 10px; /* Add some space between the image and text */
+}
+
+.note-item img {
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Adjust the values as needed */
+}
+
+.note-text {
+    margin-top: 10px; /* Add some space between the image and text */
+    font-size: 14px; /* Adjust the font size as needed */
+}
+
+
+audio {
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add a box-shadow to the audio element */
+    max-width: 90%;
+    width: 100%;
+}
+
+.main-content h1{
+    text-align: center;
+    font-size: 35px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header h1 {
+    font-size: 32px;
+    margin: 0;
+  }
+  
+  header span {
+    color: #00a2ff;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  nav li {
+    margin-left: 20px;
+  }
+  
+  nav li:first-child {
+    margin-left: 0;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  nav a:hover {
+    color: #00a2ff;
+  }
+  
+  /* Styling for the "Play!" button */
+  #generate-btn {
+    background-color: #00a2ff;
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  #generate-btn:hover {
+    background-color: #0092e6;
+  }
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+@media (max-width: 992px) {
+    .note-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .video-container {
+        grid-template-columns: 1fr;
+        grid-auto-flow: row; 
+        justify-content: center; /* Center the video in the container */
+        gap: 20px; /* Add some spacing between the video and other content */
+    }
+    .finger{
+        padding-top: 100vh;
+    }
+}
+
+@media (max-width: 576px) {
+    .note-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .video-container {
+        grid-template-columns: 1fr;
+        grid-auto-flow: row; 
+        justify-content: center; /* Center the video in the container */
+        gap: 20px; /* Add some spacing between the video and other content */
+    }
+}
+
+

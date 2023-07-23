@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Note Generator</title>
+    <link rel="stylesheet" href="play.css">
+</head>
+<body>
+    <header>
+        <h1>Clari<span>.net</span></h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="lessons.html">Lessons</a></li>
+                <li><a href="play.html">Play!</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="main-content">
+        <h1>Select Level</h1>
+
+            <select id="level-selector">
+                <option value="1">Level 1</option>
+            </select>
+            <!-- Add more rhythm options as needed -->
+        </div>
+
+        <button id="generate-btn">Generate Notes</button>
+
+        <div class="note-generator">
+            <!-- The generated notes will be displayed here -->
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Clari.net | All rights reserved</p>
+    </footer>
+    <script src="https://unpkg.com/vexflow@1.4.4/releases/vexflow-musicxml.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vexflow@4.2.2/build/cjs/vexflow.js"></script>    <script src="play.js"></script>
+</body>
+</html>
